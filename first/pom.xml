@@ -4,7 +4,7 @@
   <artifactId>first</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
- <finalName>jenkins-docker-github</finalName> 
+ <finalName>jenkins-docker</finalName> 
   
   </build>
 </project>
