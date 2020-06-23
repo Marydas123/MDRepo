@@ -4,7 +4,7 @@
   <artifactId>dockeradded</artifactId>
   <version>0.0.1-SNAPSHOT</version>
  <build>
- <finalName>jenkins-docker-added</finalName> 
+ <finalName>jenkins-docker-add</finalName> 
   
   </build>
 </project>
