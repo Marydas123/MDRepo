@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="/SpringExample"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/commons-pool2-2.6.2-bin/commons-pool2-2.6.2/commons-pool2-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/commons-dbcp2-2.4.0-bin/commons-dbcp2-2.4.0/commons-dbcp2-2.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/spring-beans-3.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/mybatis-3.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-jdbc-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-orm-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-tx-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/spring-ibatis-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/ibatis-common-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/spring-dao-2.0.6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar" sourcepath="C:/Users/marydas c j/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="spring-context-4.2.6.RELEASE.jar"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-context"/>
+			<attribute name="maven.version" value="4.2.6.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/jars/spring-core-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/jackson-databind-2.9.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/jackson-annotations-2.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/jackson-core-2.9.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/javax.batch-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/jettison-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-aop-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-batch-core-4.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-batch-infrastructure-2.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-batch-infrastructure-4.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-beans-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-context-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-core-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-core-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-expression-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-jcl-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-retry-1.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marydas c j/Downloads/jar/spring-tx-5.1.6.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+               http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+   
+  <context:property-placeholder location="classpath:db.properties" />
+  <context:component-scan base-package="com.spring.test" />
+ <context:annotation-config/>     
+  <!--   <bean id="teacherbean" class="com.spring.test.Teacher">
+        <property name="dbHost" value="${db.host.url}"/>  
+        <property name="dbPort" value="${db.port.number}"/>  
+    </bean  > -->
+    <bean id="test" class="com.spring.test.TestSpring" >
+     <property name="s1" value="lala"/>  
+    </bean>
+
+    <!-- <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="staticMethod" value="com.spring.test.Factory.setCar" />
+		<property name="arguments">
+			<list>
+				<value>com.spring.test.Benz</value>
+			</list>
+		</property>
+	</bean>  -->
+	<bean id="factory" factory-bean="rf"  factory-method="getInstance">
+    </bean> 
+	<bean id="rf" class="com.spring.test.Factory"  >
+	<property name="car" value="com.spring.test.Benz"></property>
+    </bean> 
+      <bean id="car" class="com.spring.test.Car" > 
+    <lookup-method name="show" bean="refCar"/>
+    </bean>  
+    <bean id="refcar" class="com.spring.test.Engine" scope="prototype">
+    <replaced-method name="print" replacer="crsrc"></replaced-method>
+    </bean>
+     <bean id="crsrc" class="com.spring.test.CarSource" scope="prototype"/>
+     <import resource="/sprindao.xml"/>
+</beans>

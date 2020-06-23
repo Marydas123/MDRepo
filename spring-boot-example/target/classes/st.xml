@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="st">
+
+   <!-- Perform Insert Operation -->
+	
+   <insert id="insert" parameterClass="com.spring.student.Student">
+      INSERT INTO Student(name)
+      values (#name#)
+
+      <selectKey resultClass="int" keyProperty="id">
+         select last_insert_id() as id
+      </selectKey>
+   </insert>
+
+  <!--   Perform Read Operation
+   <select id="getAll" resultClass="Employee">
+      SELECT * FROM EMPLOYEE
+   </select>
+
+   Perform Update Operation
+   <update id="update" parameterClass="Employee">
+      UPDATE EMPLOYEE
+      SET    first_name = #first_name#
+      WHERE  id = #id#
+    </update>
+
+   Perform Delete Operation
+   <delete id="delete" parameterClass="int">
+      DELETE FROM EMPLOYEE
+      WHERE  id = #id#
+   </delete>
+ -->
+   <!-- Using ResultMap -->
+   <resultMap id="result" class="com.spring.student.Student">
+      <result property="id" column="id"/>
+      <result property="name" column="studentname"/>
+   </resultMap> 
+	
+   <select id="stset" resultMap="result">
+      SELECT * FROM student
+      WHERE id >= #id#
+   </select>
+
+</sqlMap>

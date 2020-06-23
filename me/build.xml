@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<project name="me" default="run">  
+    <target name="run" depends="compile">  
+        <java classname = "my.me.App">  
+            <classpath path="test"></classpath>  
+        </java>  
+        
+    </target>  
+    <property name="build.dir" value="build" />
+    <property name="dist.dir" value="dist" />
+    <target name="compile">  
+        <javac includeantruntime="false" srcdir="./src" destdir = "test"></javac>  
+    </target> 
+    <target name = "build-jar">
+   <jar destfile = "${dist.dir}/lib/app.jar"
+      basedir = "${build.dir}/classes"
+      includes = "faxapp/util/**"
+      excludes = "**/Test.class">
+      
+      <manifest>
+         <attribute name = "Main-Class" value = "my.me.App"/>
+      </manifest>
+   </jar>
+</target> 
+</project>  
